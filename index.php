@@ -118,9 +118,9 @@
 		<div id="fh5co-about" data-section="about">
 			<div class="fh5co-2col fh5co-bg to-animate-2" style="background-image: url(images/res_img_1.jpg)"></div>
 			<div class="fh5co-2col fh5co-text">
-				<h2 class="heading to-animate">About Us</h2>
-				<p class="to-animate"><span class="firstcharacter">F</span>ar far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life.</p>
-				<p class="text-center to-animate"><a href="#" class="btn btn-primary btn-outline">Get in touch</a></p>
+				<h2 class="heading to-animate">¿Quiénes Somos?</h2>
+				<p class="to-animate"><span class="firstcharacter">E</span>n Delicious Food, creemos que la mejor experiencia gastronómica comienza con ingredientes frescos, recetas auténticas y un ambiente acogedor. Somos un restaurante apasionado por la buena comida, donde cada platillo es preparado con dedicación para brindar a nuestros clientes un sabor inigualable.</p>
+				<p class="text-center to-animate"><a href="#" class="btn btn-primary btn-outline">Regresar</a></p>
 			</div>
 		</div>
 
@@ -133,26 +133,20 @@
 							
 							<li>
 								<blockquote>
-									<p>&ldquo;Cooking is an art, but all art requires knowing something about the techniques and materials&rdquo;</p>
+									<p>&ldquo;¡Ven a descubrir el auténtico placer de la buena comida con nosotros!;</p>
 									<p class="quote-author">&mdash; Nathan Myhrvold</p>
 								</blockquote>
 							</li>
 							<li>
 								<blockquote>
-									<p>&ldquo;Give a man food, and he can eat for a day. Give a man a job, and he can only eat for 30 minutes on break.&rdquo;</p>
-									<p class="quote-author">&mdash; Lev L. Spiro</p>
+									<p>&ldquo;No se recuerda un día, se recuerdan los momentos.&rdquo;</p>
+									<p class="quote-author">&mdash; Cesar Pavese</p>
 								</blockquote>
 							</li>
 							<li>
 								<blockquote>
-									<p>&ldquo;Find something you’re passionate about and keep tremendously interested in it.&rdquo;</p>
-									<p class="quote-author">&mdash; Julia Child</p>
-								</blockquote>
-							</li>
-							<li>
-								<blockquote>
-									<p>&ldquo;Never work before breakfast; if you have to work before breakfast, eat your breakfast first.&rdquo;</p>
-									<p class="quote-author">&mdash; Josh Billings</p>
+									<p>&ldquo;Comer es una necesidad, pero cocinar es un arte.;</p>
+									<p class="quote-author">&mdash; François de La Rochefoucauld.</p>
 								</blockquote>
 							</li>
 							
@@ -168,8 +162,8 @@
 			<div class="container">
 				<div class="row text-center fh5co-heading row-padded">
 					<div class="col-md-8 col-md-offset-2">
-						<h2 class="heading to-animate">Featured Dishes</h2>
-						<p class="sub-heading to-animate">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+						<h2 class="heading to-animate">Platos Destacados</h2>
+						<p class="sub-heading to-animate">Ya sea que busques un almuerzo reconfortante, una cena especial o simplemente un rincón para disfrutar de buena compañía, en Delicious Food siempre encontrarás calidad, pasión y un servicio excepcional.</p>
 					</div>
 				</div>
 				<div class="row">
@@ -240,26 +234,26 @@
 				<div class="row">
 					<div class="col-md-3 to-animate">
 						<div class="fh5co-type">
-							<h3 class="with-icon icon-1">Fruits</h3>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+							<h3 class="with-icon icon-1">Frutas</h3>
+							<p>En nuestro restaurante, celebramos la frescura y el sabor natural de las frutas. Disfruta de jugos recién hechos, postres frutales y combinaciones que resaltan lo mejor de cada estación. ¡Un toque dulce y refrescante en cada bocado!</p>
 						</div>
 					</div>
 					<div class="col-md-3 to-animate">
 						<div class="fh5co-type">
-							<h3 class="with-icon icon-2">Sea food</h3>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+							<h3 class="with-icon icon-2">Comida Marina</h3>
+							<p>Sabores que vienen del mar directo a tu mesa. Nuestros mariscos y pescados son seleccionados con la mejor calidad para ofrecerte platillos frescos y deliciosos. </p>
 						</div>
 					</div>
 					<div class="col-md-3 to-animate">
 						<div class="fh5co-type">
 							<h3 class="with-icon icon-3">Vegetables</h3>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+							<p>La frescura de la naturaleza en cada plato. Utilizamos vegetales seleccionados para brindarte ensaladas vibrantes, guarniciones llenas de sabor y opciones saludables que complementan cualquier comida. </p>
 						</div>
 					</div>
 					<div class="col-md-3 to-animate">
 						<div class="fh5co-type">
-							<h3 class="with-icon icon-4">Meat</h3>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+							<h3 class="with-icon icon-4">Carnes</h3>
+							<p>Para los amantes de la buena carne, ofrecemos cortes jugosos y llenos de sabor. Preparados con el mejor sazón y cocinados a la perfección, cada platillo es una experiencia para los sentidos.</p>
 						</div>
 					</div>
 				</div>
@@ -537,101 +531,69 @@
 		</div>
 
 		<div id="fh5co-events" data-section="events" style="background-image: url(images/slide_2.jpg);" data-stellar-background-ratio="0.5">
-			<div class="fh5co-overlay"></div>
-			<div class="container">
-				<div class="row text-center fh5co-heading row-padded">
-					<div class="col-md-8 col-md-offset-2 to-animate">
-						<h2 class="heading">Upcoming Events</h2>
-						<p class="sub-heading">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-4">
-						<div class="fh5co-event to-animate-2">
-							<h3>Kitchen Workshops</h3>
-							<span class="fh5co-event-meta">March 19th, 2016</span>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-							<p><a href="#" class="btn btn-primary btn-outline">Read More</a></p>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="fh5co-event to-animate-2">
-							<h3>Music Concerts</h3>
-							<span class="fh5co-event-meta">March 19th, 2016</span>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-							<p><a href="#" class="btn btn-primary btn-outline">Read More</a></p>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="fh5co-event to-animate-2">
-							<h3>Free to Eat Party</h3>
-							<span class="fh5co-event-meta">March 19th, 2016</span>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-							<p><a href="#" class="btn btn-primary btn-outline">Read More</a></p>
-						</div>
-					</div>
-				</div>
-			</div>
+			
 		</div>
 
+		
 		<div id="fh5co-contact" data-section="reservation">
 			<div class="container">
 				<div class="row text-center fh5co-heading row-padded">
 					<div class="col-md-8 col-md-offset-2">
-						<h2 class="heading to-animate">Reserve a Table</h2>
-						<p class="sub-heading to-animate">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+						<h2 class="heading to-animate">Tabla de reservación</h2>
+						<p class="sub-heading to-animate">Antes de realizar tu reservación, completa el siguiente formulario con tus datos y preferencias. ¡Nos encantará recibirte!</p>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-md-6 to-animate-2">
-						<h3>Contact Info</h3>
+						<h3>Información de Contacto</h3>
 						<ul class="fh5co-contact-info">
 							<li class="fh5co-contact-address ">
 								<i class="icon-home"></i>
-								5555 Love Paradise 56 New Clity 5655, <br>Excel Tower United Kingdom
+								Curro Riveraa, <br> Mz 85, Lt 5
 							</li>
-							<li><i class="icon-phone"></i> (123) 465-6789</li>
-							<li><i class="icon-envelope"></i>info@freehtml5.co</li>
-							<li><i class="icon-globe"></i> <a href="http://freehtml5.co/" target="_blank">freehtml5.co</a></li>
+							<li><i class="icon-phone"></i> +52 55 48280104</li>
+							<li><i class="icon-envelope"></i>Deli@gmail.com</li>
+							<li><i class="icon-globe"></i> <a href="http://freehtml5.co/" target="_blank"></a></li>
 						</ul>
 					</div>
 					<div class="col-md-6 to-animate-2">
-						<h3>Reservation Form</h3>
+						<h3>Formulario de Reservación</h3>
 						<div class="form-group ">
-							<label for="name" class="sr-only">Name</label>
-							<input id="name" class="form-control" placeholder="Name" type="text">
+							<label for="name" class="sr-only">Nombre</label>
+							<input id="name" class="form-control" placeholder="Nombre" type="text">
 						</div>
 						<div class="form-group ">
 							<label for="email" class="sr-only">Email</label>
 							<input id="email" class="form-control" placeholder="Email" type="email">
 						</div>
 						<div class="form-group">
-							<label for="occation" class="sr-only">Occation</label>
+							<label for="occation" class="sr-only">Ocasión</label>
 							<select class="form-control" id="occation">
-								<option>Select an Occation</option>
-							  <option>Wedding Ceremony</option>
-							  <option>Birthday</option>
-							  <option>Others</option>
+								<option>Selecciona una ocasión</option>
+							  <option>Ceremonia de Boda</option>
+							  <option>Cumpleaños</option>
+							  <option>Otros</option>
 							</select>
 						</div>
 						<div class="form-group ">
-							<label for="date" class="sr-only">Date</label>
-							<input id="date" class="form-control" placeholder="Date &amp; Time" type="text">
+							<label for="date" class="sr-only">Fech y hora</label>
+							<input id="date" class="form-control" placeholder="Fecha &amp; hora" type="text">
 						</div>
 
 
 							
 						<div class="form-group ">
-							<label for="message" class="sr-only">Message</label>
-							<textarea name="" id="message" cols="30" rows="5" class="form-control" placeholder="Message"></textarea>
+							<label for="message" class="sr-only">Mensaje</label>
+							<textarea name="" id="mensaje" cols="30" rows="5" class="form-control" placeholder="Mensaje"></textarea>
 						</div>
 						<div class="form-group ">
-							<input class="btn btn-primary" value="Send Message" type="submit">
+							<input class="btn btn-primary" value="Generaar" type="submit">
 						</div>
 						</div>
 				</div>
 			</div>
 		</div>
+
 
 		
 	</div>
@@ -640,7 +602,7 @@
 		<div class="container">
 			<div class="row row-padded">
 				<div class="col-md-12 text-center">
-					<p class="to-animate">&copy; 2016 Foodee Free HTML5 Template. <br> Designed by <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a> Demo Images: <a href="http://pexels.com/" target="_blank">Pexels</a> <br> Tasty Icons Free <a href="http://handdrawngoods.com/store/tasty-icons-free-food-icons/" target="_blank">handdrawngoods</a>
+					<p class="to-animate">&copy; 2025 Proyect Innovation.</a>
 					</p>
 					<p class="text-center to-animate"><a href="#" class="js-gotop">Go To Top</a></p>
 				</div>
