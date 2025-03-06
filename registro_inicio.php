@@ -309,7 +309,9 @@
             success: function (data) {
                 console.log(data);
 
-                if (data == 1) {
+                if(data == 2){
+                    window.location.href = "indexAdmin.php"
+                }else if (data == 1) {
                     window.location.href = "index.php";
                 } else {
                     $("#mensaje_error").html("Passworod o Email incorrecto");

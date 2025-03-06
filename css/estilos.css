@@ -62,40 +62,86 @@
     text-align: center;
 }
 
-/* Estilo del título */
-.custom-heading {
-    font-size: 2.5rem;
+/****************************************************************************************************/
+
+/* Estilo para el título de la tabla */
+.tabla-titulo {
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
     margin-bottom: 20px;
+    color: #4A4A4A;
+    text-transform: uppercase;
+    font-family: 'Georgia', serif;
 }
 
-/* Estilo del texto descriptivo */
-.custom-description {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    margin-bottom: 20px;
+/* Estilo de la tabla */
+.tabla-usuarios {
+    width: 90%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #f8f8f8;
+    border: 1px solid #d3d3d3;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilo del botón */
-.custom-btn {
-    background-color: #fb6e14;
-    border-color: #fb6e14;
+
+.tabla-usuarios th {
+    background-color: #3a3a3a;
     color: white;
-    font-size: 1.2rem;
-    padding: 12px 30px;
+    padding: 16px;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+
+.tabla-usuarios td {
+    padding: 14px;
+    text-align: center;
+    font-size: 16px;
+    color: #555;
+    border-bottom: 1px solid #e1e1e1;
+    font-family: 'Arial', sans-serif;
+}
+
+
+.tabla-usuarios tr:nth-child(even) {
+    background-color: #f1f1f1;
+}
+
+
+.tabla-usuarios tr:hover {
+    background-color: #e6e6e6;
+}
+
+
+.tabla-usuarios button {
+    background-color: #FF6F61;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
     border-radius: 5px;
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
-    text-decoration: none;
+    transition: background-color 0.3s ease;
 }
 
-/* Estilo cuando se pasa el ratón sobre el botón */
-.custom-btn:hover {
-    background-color: #fb6e14;
-    border-color: #fb6e14;
+/* Efecto pa los botones */
+.tabla-usuarios button:hover {
+    background-color: #D85C4B;
 }
 
-/* Espaciado entre el icono y el texto en el botón */
-.custom-btn i {
+.tabla-usuarios button i {
     margin-right: 8px;
+    font-size: 18px;
 }
+
