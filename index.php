@@ -74,6 +74,10 @@ session_start();
 
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.24/dist/sweetalert2.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.24/dist/sweetalert2.all.min.js"></script>
+
+
 
 
 	<!-- Modernizr JS -->
@@ -128,11 +132,13 @@ session_start();
 					<div class="fh5co-menu-2">
 						<a href="#" data-nav-section="menu"><i class="fas fa-utensils"></i> Menu</a>
 						<a href="#" data-nav-section="reservation"><i class="fas fa-calendar-check"></i> Reservación</a>
-						<?php if(isset($_SESSION["cliente"])){?>
-							<a onclick="redireccionarSalir()" style="cursor: pointer;font-size: 12px;"><i class="fas fa-user"></i> Salir (<?php echo $_SESSION["cliente"]; ?>)</a>
-						<?php   }else{ ?>	
-							<a onclick="redireccionar()" style="cursor: pointer;"><i class="fas fa-user"></i> Inicio de Sesión</a>
-							
+						<?php if (isset($_SESSION["cliente"])) { ?>
+							<a onclick="redireccionarSalir()" style="cursor: pointer;font-size: 12px;"><i
+									class="fas fa-user"></i> Salir (<?php echo $_SESSION["cliente"]; ?>)</a>
+						<?php } else { ?>
+							<a onclick="redireccionar()" style="cursor: pointer;"><i class="fas fa-user"></i> Inicio de
+								Sesión</a>
+
 						<?php } ?>
 
 					</div>
@@ -148,7 +154,7 @@ session_start();
 					acogedor. Somos un restaurante apasionado por la buena comida, donde cada platillo es preparado con
 					dedicación para brindar a nuestros clientes un sabor inigualable.</p>
 				<p class="text-center to-animate"><a href="#" class="btn btn-primary btn-outline">Regresar</a></p>
-				
+
 			</div>
 		</div>
 
@@ -631,13 +637,8 @@ session_start();
 							<input id="email" class="form-control" placeholder="Email" type="email">
 						</div>
 						<div class="form-group">
-							<label for="occation" class="sr-only">Ocasión</label>
-							<select class="form-control" id="occation">
-								<option>Selecciona una ocasión</option>
-								<option>Ceremonia de Boda</option>
-								<option>Cumpleaños</option>
-								<option>Otros</option>
-							</select>
+							<label for="ocacion" class="sr-only">Ocación</label>
+							<input id="ocacion" class="form-control" placeholder="Ocación" type="ocacion">
 						</div>
 						<div class="form-group ">
 							<label for="date" class="sr-only">Fech y hora</label>
@@ -647,12 +648,12 @@ session_start();
 
 
 						<div class="form-group ">
-							<label for="message" class="sr-only">Mensaje</label>
+							<label for="mensaje" class="sr-only">Mensaje</label>
 							<textarea name="" id="mensaje" cols="30" rows="5" class="form-control"
 								placeholder="Mensaje"></textarea>
 						</div>
 						<div class="form-group ">
-							<input class="btn btn-primary" value="Generaar" type="submit">
+							<input class="btn btn-primary" onclick=" Reservacion()" value="Generar" type="submit">
 						</div>
 					</div>
 				</div>
@@ -725,24 +726,66 @@ session_start();
 			$('#date').datetimepicker();
 		});
 
-function redireccionar(){
-	window.location.href="registro_inicio.php"
-}
+		function redireccionar() {
+			window.location.href = "registro_inicio.php"
+		}
 
-function redireccionarSalir(){
-	fetch('logout.php')
-        .then(response => response.text())
-        .then(data => {
-            console.log(data); // Mensaje del servidor
-            window.location.href = "index.php"; // Redirige al login
-        })
-        .catch(error => console.error("Error al cerrar sesión:", error));
-}
+		function redireccionarSalir() {
+			fetch('logout.php')
+				.then(response => response.text())
+				.then(data => {
+					console.log(data); // Mensaje del servidor
+					window.location.href = "index.php"; // Redirige al login
+				})
+				.catch(error => console.error("Error al cerrar sesión:", error));
+		}
 
 
 	</script>
 	<!-- Main JS -->
 	<script src="js/main.js"></script>
+
+	<script>
+		function Reservacion() {
+			event.preventDefault(); // Evita que la página se recargue
+
+			var nombre = document.getElementById("name").value;
+			var email = document.getElementById("email").value;
+			var ocacion = document.getElementById("ocacion").value;
+			var date = document.getElementById("date").value;
+			var mensaje = document.getElementById("mensaje").value;
+
+			if (!nombre || !email || !ocacion || !date || !mensaje) {
+				alert("Por favor, completa todos los campos.");
+				return;
+			}
+
+			// Formatear fecha correctamente
+			var date = document.getElementById("date").value;
+			var formattedDate = date.replace("T", " ") + ":00";
+
+			var formData = new FormData();
+			formData.append("name", nombre);
+			formData.append("email", email);
+			formData.append("ocacion", ocacion);
+			formData.append("date", formattedDate);
+			formData.append("mensaje", mensaje);
+
+			fetch("include/Reserva.php", {
+				method: "POST",
+				body: formData
+			})
+				.then(response => response.text())
+				.then(data => {
+					alert(data); // Ver qué responde el servidor
+				})
+				.catch(error => {
+					console.error("Error:", error);
+				});
+		}
+
+	</script>
+
 
 </body>
 

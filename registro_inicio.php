@@ -121,7 +121,8 @@
                         <a href="index.html">Delisious<p class="menusito"> </p>food</a>
                     </div>
                     <div class="fh5co-menu-2">
-                        <a  onclick="redireccionarIndex()" style="cursor:pointer;"> <i class="fas fa-home"></i> Inicio</a>
+                        <a onclick="redireccionarIndex()" style="cursor:pointer;"> <i class="fas fa-home"></i>
+                            Inicio</a>
 
                     </div>
                 </div>
@@ -138,51 +139,64 @@
                             <p class="sub-heading to-animate">Accede a tu cuenta o regístrate para disfrutar de nuestros
                                 servicios.</p>
                         </div>
-                        
+
                     </div>
                     <div class="row">
-                    <div class="col-md-6 col-md-offset-3 to-animate-2">
-                    <div id="login_datos">
+                        <div class="col-md-6 col-md-offset-3 to-animate-2">
+                            <div id="login_datos">
                                 <div class="form-group">
                                     <label for="login-email" class="sr-only">Email</label>
-                                    <input id="email" class="form-control" placeholder="Email" type="email" name="email">
+                                    <input id="email" class="form-control" placeholder="Email" type="email"
+                                        name="email">
                                 </div>
                                 <div class="form-group">
                                     <label for="login-password" class="sr-only">Contraseña</label>
-                                    <input id="password" class="form-control" placeholder="Contraseña"  type="password" name="password">
+                                    <input id="password" class="form-control" placeholder="Contraseña" type="password"
+                                        name="password">
                                 </div>
-            
+
                                 <div class="form-group">
                                     <button class="btn btn-primary" onclick="Login()">Iniciar Session</button>
                                 </div>
                                 <div id="mensaje_error" style="color: red;text-align: center;"></div>
-                                <p><a href="#" onclick="toggleForm()">¿No tienes cuenta? Regístrate aquí</a></p>
-                    </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <a href="#" onclick="toggleForm()">¿No tienes cuenta? Regístrate aquí</a>
+                                    <a href="index.php" class="btn btn-link">
+                                        <i class="fas fa-arrow-left"></i> Regresar
+                                    </a>
+                                </div>
+                            </div>
 
-                    <div id="register-form" style="display: none;">
+                            <div id="register-form" style="display: none;">
                                 <div class="form-group">
                                     <label for="register-name" class="sr-only">Nombre</label>
-                                    <input id="register-name" class="form-control" placeholder="Nombre completo" name="name" type="text">
+                                    <input id="register-name" class="form-control" placeholder="Nombre completo"
+                                        name="name" type="text">
                                 </div>
                                 <div class="form-group">
                                     <label for="register-email" class="sr-only">Email</label>
-                                    <input id="register-email" class="form-control" placeholder="Email" name="email" type="email">
+                                    <input id="register-email" class="form-control" placeholder="Email" name="email"
+                                        type="email">
                                 </div>
                                 <div class="form-group">
                                     <label for="register-password" class="sr-only">Contraseña</label>
-                                    <input id="register-password" class="form-control" placeholder="Contraseña" name="password"
-                                        type="password">
+                                    <input id="register-password" class="form-control" placeholder="Contraseña"
+                                        name="password" type="password">
                                 </div>
                                 <div class="form-group">
-                                     <button class="btn btn-primary w-100 py-3" onclick="GuardarRegistro()">Guardar Registro</button>
+                                    <button class="btn btn-primary w-100 py-3" onclick="GuardarRegistro()">Guardar
+                                        Registro</button>
                                 </div>
-                                   <p><a href="#" onclick="toggleForm(1)">¿Ya tienes cuenta? Inicia sesión aquí</a></p>
-                        </div>   
+                                <div class="d-flex align-items-center">
+                                    <a href="#" onclick="toggleForm(1)">¿Ya tienes cuenta? Inicia sesión aquí</a>
+                                    <a href="index.php" class="btn btn-link ms-auto">
+                                        <i class="fas fa-arrow-left"></i> Regresar
+                                    </a>
+                                </div>
+                            </div>
 
                             <div class="text-center">
-                                <a href="index.php" class="btn btn-primary btn-lg">
-                                    <i class="fas fa-arrow-left"></i> Regresar a la página principal
-                                </a>
+
                             </div>
                         </div>
                     </div>
@@ -192,12 +206,12 @@
 
             <script>
                 function toggleForm(x) {
-                    if(x == 1){
-                
+                    if (x == 1) {
+
                         $("#register-form").hide();
                         $("#login_datos").show();
-                    }else{
-                        
+                    } else {
+
                         $("#login_datos").hide();
                         $("#register-form").show()
                     }
@@ -255,104 +269,105 @@
             </script>
             <!-- Main JS -->
             <script src="js/main.js"></script>
-           
+
         </body>
 
 </html>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script>
 
-function redireccionarIndex(){
-    window.location.href="index.php";
-}
-
-
-function Login(){
-
-var   email = $("#email").val();
-  if(email =="" ){ 
-    Swal.fire({ icon: 'error', title: 'Ingresa Email', showConfirmButton: false, timer: 1500 });
-    //alert("campo vacio");
-    return false;  
-}
-
-  var   password = $("#password").val();
-  if(password =="" ){ 
-    Swal.fire({ icon: 'error', title: 'Ingresa Password ', showConfirmButton: false, timer: 1500 });
-    return false;  
-}
-
-
-            $.ajax({
-
-                url:'include/login.php',
-                type:'POST',
-                data: {
-                        email:email,
-                        pas:password
-
-                },
-                success:function(data){
-                    console.log(data);
-
-                    if(data == 1){
-                        window.location.href="index.php";
-                    }else{
-                     $("#mensaje_error").html("Passworod o Email incorrecto");
-                    }
-                    
-                }
-
-            });
-}
-
-function GuardarRegistro(){
-
-  var name =   $("#register-name").val();
-  if(name =="" ){ 
-    Swal.fire({ icon: 'error', title: 'Ingresa Nombre Completo', showConfirmButton: false, timer: 1500 });
-    return false;  
+    function redireccionarIndex() {
+        window.location.href = "index.php";
     }
 
 
-  var   email = $("#register-email").val();
-  if(email =="" ){ 
-    Swal.fire({ icon: 'error', title: 'Ingresa Email', showConfirmButton: false, timer: 1500 });
-    return false;  
-}
+    function Login() {
 
-  var   password = $("#register-password").val();
-  if(password =="" ){ 
-    Swal.fire({ icon: 'error', title: 'Ingresa Password ', showConfirmButton: false, timer: 1500 });
-    return false;  
-}
+        var email = $("#email").val();
+        if (email == "") {
+            Swal.fire({ icon: 'error', title: 'Ingresa Email', showConfirmButton: false, timer: 1500 });
+            //alert("campo vacio");
+            return false;
+        }
+
+        var password = $("#password").val();
+        if (password == "") {
+            Swal.fire({ icon: 'error', title: 'Ingresa Password ', showConfirmButton: false, timer: 1500 });
+            return false;
+        }
+
+
+        $.ajax({
+
+            url: 'include/login.php',
+            type: 'POST',
+            data: {
+                email: email,
+                pas: password
+
+            },
+            success: function (data) {
+                console.log(data);
+
+                if (data == 1) {
+                    window.location.href = "index.php";
+                } else {
+                    $("#mensaje_error").html("Passworod o Email incorrecto");
+                }
+
+            }
+
+        });
+    }
+
+    function GuardarRegistro() {
+
+        var name = $("#register-name").val();
+        if (name == "") {
+            Swal.fire({ icon: 'error', title: 'Ingresa Nombre Completo', showConfirmButton: false, timer: 1500 });
+            return false;
+        }
+
+
+        var email = $("#register-email").val();
+        if (email == "") {
+            Swal.fire({ icon: 'error', title: 'Ingresa Email', showConfirmButton: false, timer: 1500 });
+            return false;
+        }
+
+        var password = $("#register-password").val();
+        if (password == "") {
+            Swal.fire({ icon: 'error', title: 'Ingresa Password ', showConfirmButton: false, timer: 1500 });
+            return false;
+        }
 
 
 
 
-$.ajax({
+        $.ajax({
 
-url:'include/alta_cliente.php',
-type:'POST',
-data: {name:name,email:email,password:password
+            url: 'include/alta_cliente.php',
+            type: 'POST',
+            data: {
+                name: name, email: email, password: password
 
-},
-success:function(data){
-    Swal.fire({
+            },
+            success: function (data) {
+                Swal.fire({
                     icon: 'success',
                     title: 'Registro Correcto',
                     showConfirmButton: false,
                     timer: 1500
-                    })
+                })
 
-                   setTimeout("location.href='registro_inicio.php'",2000);
+                setTimeout("location.href='registro_inicio.php'", 2000);
 
-}
+            }
 
 
 
-});
+        });
 
-}
+    }
 
 </script>
