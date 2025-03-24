@@ -1,0 +1,147 @@
+/* Animación para hacer que el contenido aparezca desde abajo */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Aseguramos que la clase to-animate tenga la animación aplicada */
+.to-animate {
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+/* La clase to-animate-2 para el fondo (cuando es necesario hacer animación también) */
+.to-animate-2 {
+    animation: fadeInUp 1.5s ease-out forwards;
+}
+
+/* Contenedor principal */
+#custom-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    background-color: #f7f7f7;
+}
+
+/* Contenedor del contenido, para centrar imagen y texto */
+.custom-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Fondo de la imagen */
+.custom-bg {
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    min-height: 300px;
+    border-radius: 10px;
+}
+
+/* Área de texto */
+.custom-text {
+    flex: 1;
+    max-width: 700px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/****************************************************************************************************/
+
+/* Estilo para el título de la tabla */
+.tabla-titulo {
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #4A4A4A;
+    text-transform: uppercase;
+    font-family: 'Georgia', serif;
+}
+
+/* Estilo de la tabla */
+.tabla-usuarios {
+    width: 90%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #f8f8f8;
+    border: 1px solid #d3d3d3;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+.tabla-usuarios th {
+    background-color: #3a3a3a;
+    color: white;
+    padding: 16px;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+
+.tabla-usuarios td {
+    padding: 14px;
+    text-align: center;
+    font-size: 16px;
+    color: #555;
+    border-bottom: 1px solid #e1e1e1;
+    font-family: 'Arial', sans-serif;
+}
+
+
+.tabla-usuarios tr:nth-child(even) {
+    background-color: #f1f1f1;
+}
+
+
+.tabla-usuarios tr:hover {
+    background-color: #e6e6e6;
+}
+
+
+.tabla-usuarios button {
+    background-color: #FF6F61;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+/* Efecto pa los botones */
+.tabla-usuarios button:hover {
+    background-color: #D85C4B;
+}
+
+.tabla-usuarios button i {
+    margin-right: 8px;
+    font-size: 18px;
+}
+
